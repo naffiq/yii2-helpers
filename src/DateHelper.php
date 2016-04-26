@@ -1,5 +1,7 @@
 <?php
 
+namespace naffiq\helpers;
+
 /**
  * Created by PhpStorm.
  * User: rocketman

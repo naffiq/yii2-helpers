@@ -14,5 +14,10 @@
             "name": "naffiq",
             "email": "galymzhan@rocketfirm.com"
         }
-    ]
+    ],
+    "autoload": {
+        "psr-4": {
+            "naffiq\\helpers\\": "src"
+        }
+    }
 }
