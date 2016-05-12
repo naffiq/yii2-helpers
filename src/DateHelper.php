@@ -10,6 +10,13 @@ class DateHelper extends Object
      * @var string $_formatDate формат возвращаемой даты, в случае если после создания прошло более 1 дня
      */
     private static $_formatDate = 'd.m.Y';
+    
+    private static function getTimeLabels($short = false)
+    {
+        return [
+            
+        ];
+    }
 
     /**
      * Возвращает время $time в UTC
