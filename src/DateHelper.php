@@ -51,17 +51,7 @@ class DateHelper extends Object
             return \Yii::t('frontend', 'вчера');
         } else {
             // Остальное
-            return self::translateDate($time);
+            return \Yii::$app->formatter->asDate(time(), "php:j M Y");
         }
-    }
-
-    /**
-     * @param $date
-     * @return string
-     */
-    public static function translateDate($date)
-    {
-        $time = self::toTimestamp($date);
-        return date('d', $time) . ' ' . \Yii::t('frontend', date('M', $time)) . ' ' . date('Y', $time);
     }
 }
