@@ -46,7 +46,7 @@ class DateHelper extends Object
             return \Yii::t('frontend', 'вчера');
         } else {
             // Остальное
-            return \Yii::$app->formatter->asDate(time(), "php:j M Y");
+            return \Yii::$app->formatter->asDate($time, "php:j M Y");
         }
     }
 }
