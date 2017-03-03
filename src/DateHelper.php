@@ -34,8 +34,11 @@ class DateHelper extends Object
         $time = self::toTimestamp($time);
 
         $minutesSince = (time() - $time) / 60;
-
-        if ($minutesSince < 60) {
+        
+        // Только что - для даты менее 2х минут от текущей
+        if ($minutesSince < 2) {
+            return \Yii::t('frontend', 'только что');
+        } elseif ($minutesSince < 60) {
             // Если меньше часа
             return number_format($minutesSince) . ' ' . \Yii::t('frontend', 'мин. назад');
         } elseif ($minutesSince < 1440) {
