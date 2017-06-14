@@ -7,4 +7,6 @@ themes/classic/views/
 
 /vendor/
 
-.idea
+/.idea
+/phpunit.xml
+/build
