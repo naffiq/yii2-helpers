@@ -1,6 +1,13 @@
 <?php
 
+namespace naffiq\helpers;
+
+/**
+ * Class Number
+ *
+ */
 class Number {
+
   /**
    * Преобразует число в текстовую строку
    * Credits to https://habrahabr.ru/sandbox/94515/ , didn't know how to contact you, but many thanks!
@@ -72,7 +79,7 @@ class Number {
 	);
 	
 	// обозначаем переменную в которую будем писать сгенерированный текст
-	$string = array();
+	$string = [];
 	
 	// дополняем число нулями слева до количества цифр кратного трем,
 	// например 1234, преобразуется в 001234
