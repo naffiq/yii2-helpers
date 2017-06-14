@@ -2,9 +2,7 @@
 
 namespace naffiq\helpers;
 
-use yii\base\Object;
-
-class DateHelper extends Object
+class DateHelper
 {
     /**
      * Возвращает время $time в UTC
