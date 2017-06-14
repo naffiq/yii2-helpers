@@ -52,6 +52,6 @@ class DateHelperTest extends \PHPUnit\Framework\TestCase
     {
         $time = '19-06-1993 00:00:00';
 
-        $this->assertEquals('19 июн. 1993', DateHelper::getTimeSince($time));
+        $this->assertEquals(\Yii::$app->formatter->asDate($time, "php:j M Y"), DateHelper::getTimeSince($time));
     }
 }
