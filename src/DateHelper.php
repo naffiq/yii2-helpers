@@ -15,9 +15,9 @@ class DateHelper
     {
         if (!is_int($time)) {
             return strtotime($time);
-        } else {
-            return $time;
         }
+
+        return $time;
     }
 
     /**
@@ -45,9 +45,9 @@ class DateHelper
         } elseif ($minutesSince < 2880) {
             // Вчера
             return \Yii::t('app', 'вчера');
-        } else {
-            // Остальное
-            return \Yii::$app->formatter->asDate($time, "php:j M Y");
         }
+
+        // Остальное
+        return \Yii::$app->formatter->asDate($time, "php:j M Y");
     }
 }
