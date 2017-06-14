@@ -50,8 +50,8 @@ class DateHelperTest extends \PHPUnit\Framework\TestCase
 
     public function testTooLongAgo()
     {
-        $time = date('Y-m-d H:i:s', strtotime('-2 days', time()));
+        $time = '19-06-1993 00:00:00';
 
-        $this->assertEquals(\Yii::$app->formatter->asDate($time, "php:j M Y"), DateHelper::getTimeSince($time));
+        $this->assertEquals('19 июн. 1993', DateHelper::getTimeSince($time));
     }
 }
