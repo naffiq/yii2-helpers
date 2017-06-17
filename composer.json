@@ -17,8 +17,7 @@
         }
     ],
     "scripts": {
-       "test": "./vendor/bin/phpunit",
-        "codeclimate/php-test-reporter": "^0.4.4"
+       "test": "./vendor/bin/phpunit"
     },
     "autoload": {
         "psr-4": {
